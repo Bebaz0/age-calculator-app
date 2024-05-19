@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="MainCard">
+      <div class="birth">
+        <div class="labels"><label for="day">DAY</label><label for="MONTH">MONTH</label><label for="YEAR">YEAR</label></div>
+        <div class="inputs"><input id="day" type="number" placeholder="DD"><input id="MONTH" type="number" placeholder="MM"><input id="YEAR" type="number" placeholder="YYYY"></div>
+        <div class="errors"><span id="day-error" style="color: red;"></span><span id="month-error" style="color: red;"></span><span id="year-error" style="color: red;"></span></div>
+        <div class="line-with-button">
+          <div class="line"></div>
+          <button id="calculate-button" onclick="getvars()"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
+        </div>
+      </div>
+      <div class="finalAge">
+        <div class="result"><p id="totalyears">- -</p><p>years</p></div>
+        <div class="result"><p id="totalmonths">- -</p><p>months</p></div>
+        <div class="result"><p id="totaldays">- -</p><p>days</p></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Bebaz0</a>.
+  </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
