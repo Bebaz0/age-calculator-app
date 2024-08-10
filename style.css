@@ -29,6 +29,8 @@ body{
 }
 
 .labels{
+    display: flex;
+    flex-direction: row;
     gap: 11%;
     margin-bottom: 1.5%;
     font-weight: 800;
